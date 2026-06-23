@@ -56,6 +56,16 @@ a:hover { text-decoration: underline; }
   animation: fadeInUp 0.55s ease both;
 }
 
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+@media (max-width: 720px) {
+  .portfolio-grid { grid-template-columns: 1fr; }
+}
+
 ::-webkit-scrollbar { width: 3px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: rgba(0,255,136,0.25); border-radius: 2px; }
